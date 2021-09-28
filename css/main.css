@@ -181,7 +181,7 @@ main hr{
 }
 .art_img{
     width: 50%;
-    height: min-content;
+    height: fit-content;
     margin-left: 40px;
 }
 
@@ -201,7 +201,7 @@ main hr{
 }
 #gallery img{
     width: 200px;
-    height: min-content;
+    height: fit-content;
     margin: 20px;
 }
 #gallery a{
