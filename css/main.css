@@ -297,6 +297,13 @@ main hr{
     }
 }
 @media screen and (max-width: 625px){
+    #header h1{
+        font-size: 25px;
+    }
+    #nav ul li{
+        font-size: 10px;
+        padding: 5px 7.5px;
+    }
     #main_img{ 
         width: 350px;
     }
@@ -327,12 +334,12 @@ main hr{
     }
 }
 @media screen and (max-width: 425px){
-    #header h1{
-        font-size: 25px;
-    }
     #nav ul li{
         font-size: 10px;
-        padding: 5px 7.5px;
+        float: none;
+    }
+    .nav_divider{
+        border-right: 0;
     }
     #main_img{ 
         width: 275px;
@@ -369,13 +376,6 @@ main hr{
     }
 }
 @media screen and (max-width: 315px) {
-    #nav ul li{
-        font-size: 10px;
-        float: none;
-    }
-    .nav_divider{
-        border-right: 0;
-    }
     #main_img{ 
         width: 150px;
     }

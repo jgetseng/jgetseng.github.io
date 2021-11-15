@@ -18,7 +18,7 @@ fontgoogleapis.href = "https://fonts.googleapis.com";
 fontgstatic.href = "https://fonts.gstatic.com";
 fontgstatic.crossOrigin;
 merriweather.href = "https://fonts.googleapis.com/css2?family=Merriweather&display=swap";
-notosans.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap";
+notosans.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap";
 
 document.head.append(normalize);
 document.head.append(main);
