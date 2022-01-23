@@ -1,9 +1,10 @@
-const normalize = document.createElement("LINK");
-const main = document.createElement("LINK");
+const normalize = document.createElement("link");
+const main = document.createElement("link");
 const fontgoogleapis = document.createElement("link");
 const fontgstatic = document.createElement("link");
 const merriweather = document.createElement("link");
 const notosans = document.createElement("link");
+const icon = document.createElement("script");
 
 normalize.rel = "stylesheet";
 main.rel = "stylesheet";
@@ -19,6 +20,8 @@ fontgstatic.href = "https://fonts.gstatic.com";
 fontgstatic.crossOrigin;
 merriweather.href = "https://fonts.googleapis.com/css2?family=Merriweather&display=swap";
 notosans.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap";
+icon.src = "https://kit.fontawesome.com/1f333a0a21.js";
+icon.crossOrigin;
 
 document.head.append(normalize);
 document.head.append(main);
@@ -26,6 +29,7 @@ document.head.append(fontgoogleapis);
 document.head.append(fontgstatic);
 document.head.append(merriweather);
 document.head.append(notosans);
+document.head.append(icon);
 
 /*
 <link rel="stylesheet" href="/css/normalize.css">
@@ -34,4 +38,5 @@ document.head.append(notosans);
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/1f333a0a21.js" crossorigin="anonymous"></script>
 */
