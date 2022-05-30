@@ -4,42 +4,69 @@ const homepage = document.createElement("h1");
 const homepage_a = document.createElement("a");
 const nav = document.createElement("nav");
 const nav_ul = document.createElement("ul");
-const nav_li_about = document.createElement("li");
-const nav_li_articles = document.createElement("li");
-const nav_li_photopraphs = document.createElement("li");
-const nav_about = document.createElement("a");
-const nav_articles = document.createElement("a");
-const nav_photographs = document.createElement("a");
+const nav_li_essay = document.createElement("li");
+const nav_li_photopraph = document.createElement("li");
+const nav_li_thought = document.createElement("li");
+const nav_li_comment = document.createElement("li");
+const nav_li_letter = document.createElement("li");
+const nav_essay = document.createElement("a");
+const nav_thought = document.createElement("a");
+const nav_photograph = document.createElement("a");
+const nav_comment = document.createElement("a");
+const nav_letter = document.createElement("a");
 
-
-header.id = "header";
 header_container.id = "header_container";
-nav.id = "nav";
-nav_li_about.className = "nav_divider";
-nav_li_articles.className = "nav_divider";
-
 homepage_a.href = "/homepage.html";
-nav_about.href = "/html/about.html";
-nav_articles.href = "/html/articles.html";
-nav_photographs.href = "/html/photographs.html";
+homepage_a.innerText = "曾奕中 Jge.";
 
-homepage_a.innerText = "Jge.";
-nav_about.innerText = "關於 About.";
-nav_articles.innerText = "文章 Articles.";
-nav_photographs.innerText = "攝影 Photographs.";
+nav_li_letter.id = "nav_last";
+
+nav_essay.href = "/essay.html";
+nav_photograph.href = "/photograph.html";
+nav_thought.href = "/thought.html";
+nav_comment.href = "/comment.html";
+nav_letter.href = "https://forms.gle/iUupMWH6DuynX3mi7";
+nav_letter.target = "_blank";
+
+nav_essay.innerText = "隨筆";
+nav_photograph.innerText = "隨拍";
+nav_thought.innerText = "隨想";
+nav_comment.innerText = "隨評";
+nav_letter.innerText = "隨信";
 
 homepage.append(homepage_a);
 header_container.append(homepage);
 header.append(header_container);
-nav_li_about.append(nav_about);
-nav_li_articles.append(nav_articles);
-nav_li_photopraphs.append(nav_photographs);
-nav_ul.append(nav_li_about);
-nav_ul.append(nav_li_articles);
-nav_ul.append(nav_li_photopraphs);
+nav_li_essay.append(nav_essay);
+nav_li_photopraph.append(nav_photograph);
+nav_li_thought.append(nav_thought);
+nav_li_comment.append(nav_comment);
+nav_li_letter.append(nav_letter);
+nav_ul.append(nav_li_essay);
+nav_ul.append(nav_li_photopraph);
+nav_ul.append(nav_li_thought);
+nav_ul.append(nav_li_comment);
+nav_ul.append(nav_li_letter);
 nav.append(nav_ul);
 header_container.append(nav);
 document.body.append(header);
+
+/*
+<header>
+    <div id="header_container">
+        <h1><a href="/homepage.html">曾奕中 Jge.</a></h1>
+        <nav>
+            <ul>
+                <li><a href="essay.html">隨筆</a></li>
+                <li><a href="">隨拍</a></li>
+                <li><a href="">隨想</a></li>
+                <li><a href="">隨評</a></li>
+                <li id="nav_last"><a href="https://forms.gle/iUupMWH6DuynX3mi7" target="_blank">隨信</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+*/
 
 /*      
         <header id="header">
@@ -47,7 +74,7 @@ document.body.append(header);
                 <h1><a href="/homepage.html">Jge.</a></h1>
                 <nav id="nav">
                     <ul>
-                        <li class="nav_divider"><a href="about.html">關於 About.</a></li>
+                        <li class="nav_divider"><a href="essay.html">關於 About.</a></li>
                         <li class="nav_divider"><a href="articles.html">文章 Articles.</a></li>
                         <li><a href="photographs.html">攝影 Photographs.</a></li>
                     </ul>

@@ -29,7 +29,7 @@ youtube_i.className = "fab fa-youtube";
 
 email_a.href = "mailto: getseng19@gmail.com";
 facebook_a.href = "https://www.facebook.com/jgetseng";
-flickr_a.href = "https://www.flickr.com/people/162890611@N04/";
+flickr_a.href = "https://www.flickr.com/photos/162890611@N04/";
 instagram_a.href = "https://www.instagram.com/jgetseng/";
 medium_a.href = "https://jgetseng.medium.com/";
 youtube_a.href = "https://www.youtube.com/channel/UCV8minFHgKlfRzkbSTJFokA";
@@ -67,7 +67,7 @@ document.body.append(footer);
             <ul>
                 <li><a href="mailto: getseng19@gmail.com" target="_blank"><i class="fas fa-envelope-square"></i></a></li>
                 <li><a href="https://www.facebook.com/jgetseng" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-                <li><a href="https://www.flickr.com/people/162890611@N04/" target="_blank"><i class="fab fa-flickr"></i></a></li>
+                <li><a href="https://www.flickr.com/photos/162890611@N04/" target="_blank"><i class="fab fa-flickr"></i></a></li>
                 <li><a href="https://www.instagram.com/jgetseng/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://jgetseng.medium.com/" target="_blank"><i class="fab fa-medium-m"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCV8minFHgKlfRzkbSTJFokA" target="_blank"><i class="fab fa-youtube"></i></a></li>

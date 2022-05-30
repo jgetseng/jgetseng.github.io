@@ -1,264 +1,285 @@
 html{
     background-color: white;
+    font-family:  'Noto Serif TC', 'Noto Serif', serif;
 }
 
 /* Header */
 
-#header{
+header{
     width: 100%;
     background-color: white;
     display: table;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 #header_container{
     display: table-cell;
     text-align: center;
     vertical-align: middle;
 }
-#header h1{
-    font-family: 'Merriweather', serif;
+header h1{
+    margin: 15px, 0;
+    font-size: 30px;
+    font-weight: bold;
 }
-#header h1 a{
+header h1 a{
     color: black;
     text-decoration: none;
 }
-#header h1 a:hover{
+header h1 a:hover{
     color: white;
     text-shadow: 0px 0px 3px black;
 }
 
 /* Navigation */
 
-#nav{
+nav{
     padding-bottom: 15px;
-    background-color: white;
     display: flex;
     justify-content: center;
 }
-#nav ul{
+nav ul{
     margin: 0;
     padding-left: 0;
 }
-#nav ul li{
+nav ul li{
+    height: 20.7px;
     margin: 0;
-    padding: 10px 15px;
-    line-height: 10px;
-    font-family: 'Noto Sans TC', sans-serif;
+    padding: 0px 15px;
+    font-size: 18px;
+    font-weight: lighter;
+    border-right: 1px solid black;
     list-style: none;
     float: left;
 }
-#nav ul li a{
+nav ul li a{
     color: black;
     text-decoration: none;
 }
-#nav ul li a:hover{
+nav ul li a:hover{
     color: white;
     text-shadow: 0px 0px 3px black;
 }
-.nav_divider{
-    border-right: solid 1px black;
+#nav_first{
+    padding-left: 0;
+}
+#nav_last{
+    border-right: 0;
 }
 
-/* Main */
+/* Section */
 
-#main_img_container{
-    padding: 20px 20px 0 20px;
-    display: flex;
-    justify-content: center;
-}
-#main_img{ 
-    width: 750px;
-}
 main{
-    width: 100%;
-}
-
-/* Articles' Content */
-
-#content{
-    width: 750px;
-    padding: 20px;
-    justify-content: center;
+    width: 800px;
+    padding: 35px 0 50px 0;
     margin: auto;
-}
-main h1{
-    text-align: center;
-    font-family: 'Merriweather', serif;
-    padding-bottom: 10px;
-    border-bottom: solid 1px #888888;
-}
-main h2{
-    font-size: 25px;
-    margin: 40px 0 40px 0;
-}
-main h3{
-    font-size: 22.5px;
-    margin: 40px 0 40px 0;
-}
-main p{
-    text-align: left;
-    font-family: 'Noto Sans TC', sans-serif;
-    font-weight: 300;
-    font-size: 20px;
-    margin: 40px 0 40px 0;
-}
-main hr{
-    border: dashed 1px #888888;
-    margin: 40px 0 40px 0;
-}
-.content_img_container{
-    padding: 20px;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: left;
+}
+main a{
+    color: black;
+    text-decoration: none;
+}
+.section_title{
+    width: 800px;
+    padding-bottom: 25px;
+    margin: 0 0 25px 0;
+    border-bottom: 1px solid black;
     text-align: center;
 }
-.content_img{ 
-    width: 100%;
-    margin-top: 20px;
+.section_row{
+    display: flex;
+    justify-content: space-between;
 }
-.video{
-    width: 100%;
-    height: 421.875px;
-    margin-bottom: 20px;
+.section_divider{
+    border: 0;
+    margin: 12.5px 0;
 }
-.description{
+.essay_block{
+    width: 300px;
+    height: 150px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.essay_block:hover{
+    background: rgb(245, 245, 245);
+    color: white;
+    text-shadow: 0px 0px 3px black;
+    transition: all 200ms ease;
+}
+.photo_block{
+    width: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    text-align: center;
+}
+.photo_block img{
+    width: auto;
+    z-index: 98;
+    transition: opacity 200ms ease;
+}
+.photo_block img:hover{
+    opacity: 0.25;
+}
+.photo_subblock{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+}
+.photo_title{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.photo_date{
+    font-family: "Noto Sans TC", sans-serif;
+    font-size: 10px;
+    margin-top: 5px;
+}
+
+/* Essay */
+
+.essay_title{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+.essay_date{
+    margin: 10px 0 0 0;
+    font-size: 10px;
+}
+.essay_short{
+    margin: 20px 0 0 0;
+    font-size: 15px;
+}
+.date{
+    margin-top: 10px;
+    font-size: 15px;
+}
+.essay_description{
     margin: 10px;
     text-align: center;
     color: #888888;
     font-size: 15px;
 }
-.link_wo_u{
-    color: black;
-    text-decoration: none;
-}
-.link_with_u{
-    color: black;
-}
-.quote1{
+.essay_quote{
     border-left: solid 3px black;
-    padding-left: 20px;
+    padding-left: 15px;
     font-style: italic;
 }
-.quote2{
-    padding-left: 20px;
-    color: #888888;
+.essay_link{
+    color: black;
+}
+main h1{
+    margin: 20px 0 0 0;
+}
+main h2{
+    margin: 40px 0;
     font-size: 25px;
-    font-weight: 100;
 }
-
-/* About */
-
-#about_des{
-    color: #333333;
+main h3{
+    margin: 40px 0;
+    font-size: 22.5px;
 }
-
-/* Articles */
-
-.art_container{
-    padding-bottom: 20px;
-    display: flex;
-    justify-content: space-between;
-}
-.art_divider{
-    padding-bottom: 40px;
-    margin-bottom: 20px;
-    border-bottom: dashed 1px #888888;
-}
-.art_title{
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px 0;
-}
-.art_date{
-    color: #333333;
+main p{
+    margin: 40px 0;
     font-size: 20px;
-    margin: 10px 0;
 }
-.art_des{
-    color: #888888;
-    font-size: 10px;
-    margin: 10px 0;
+main hr{
+    border: solid 0.25px black;
+    margin: 40px 0;
 }
-.art_img{
-    width: 50%;
-    height: 232.875px;
-    margin-left: 40px;
+main img{
+    width: 800px;
 }
 
-/* Photographs */
+/* Photograph */
 
-#gallery{
-    width: 750px;
-    padding: 20px;
-    margin: auto;
-}
-.row{
-    width: 100%;
-    margin: auto;
+.photo_container{
+    padding-bottom: 50px;
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
 }
-#gallery img{
-    width: 200px;
-    height: 133.359px;
-    margin: 20px;
+#photo_expanded{
+    width: fit-content;
+    height: 533px;
 }
-#gallery a{
-    color: black;
-    text-decoration: none;
+.photo_column {
+    float: left;
 }
-.photo_divider{
-    padding-bottom: 40px;
-    margin-bottom: 20px;
-    border-bottom: dashed 1px #888888;
+.photo_column img {
+    width: 75px;
+    height: 75px;
+    padding: 2.5px;
+    object-fit: cover;
+    opacity: 0.8;
+    cursor: pointer;
 }
-.photo_title{
-    text-align: center;
-    font-size: 30px;
-    font-weight: bold;
-    margin: 20px 0;
+.photo_column img:hover {
+    opacity: 1;
+}
+.photo_row{
+    display: flex;
+    justify-content: flex-start;
 }
 
-.photo_date{
-    text-align: center;
-    color: #333333;
-    font-size: 20px;
-    margin: 10px 0;
+/* Thought */
+#thought_list a{
+    width: fit-content;
+}
+#thought_list p a:hover{
+    color: white;
+    text-shadow: 0px 0px 3px black;
 }
 
 /* Footer */
 
-#footer{
+footer{
     background-color: black;
     padding: 20px 0 20px 0;
     display: flex;
     justify-content: center;
 }
-#footer ul{
+footer ul{
     margin: 0;
     padding-left: 0;
 }
-#footer ul li{
+footer ul li{
     margin: 0;
     line-height: 10px;
     padding: 10px 15px;
-    font-family: 'Merriweather', serif;
     list-style: none;
     float: left;
 }
-#footer ul li i{
+footer ul li i{
     color: white;
     font-size: 20px;
     text-decoration: none; 
 }
-#footer ul li a i:hover{
+footer ul li a i:hover{
     color: black;
     text-shadow: -1px -1px 3px white, 1px -1px 3px white, -1px 1px 3px white, 1px 1px 3px white;
 }
 
 /* RWD */
 
+/*
 @media screen and (max-width: 800px) {
     #main_img{ 
         width: 500px;
@@ -399,4 +420,4 @@ main hr{
     .row{
         width: 150px;
     }
-}
+    */
