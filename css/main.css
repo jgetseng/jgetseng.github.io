@@ -122,6 +122,7 @@ main a{
 }
 .photo_block img{
     width: auto;
+    height: 240px;
     z-index: 98;
     transition: opacity 200ms ease;
 }
@@ -219,6 +220,7 @@ main img{
 #photo_expanded{
     width: fit-content;
     height: 533px;
+    width:auto;
 }
 .photo_column {
     float: left;
