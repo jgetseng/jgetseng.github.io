@@ -8,7 +8,7 @@ html{
 header{
     padding: 50px;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
 }
@@ -19,6 +19,7 @@ header{
 }
 header h1{
     padding: 15px 15px 15px 0;
+    margin-top: 0px;
     font-size: 50px;
     font-weight: bold;
 }
@@ -111,4 +112,94 @@ footer ul li i{
 footer ul li a i:hover{
     color: black;
     text-shadow: -1px -1px 3px white, 1px -1px 3px white, -1px 1px 3px white, 1px 1px 3px white;
+}
+
+/* RWD */
+
+@media screen and (max-width: 900px) {
+    main{
+        width: 600px;
+    }
+    #header_container{
+        width: fit-content;
+        margin-right: 20px;
+        text-align: left;
+    }
+    header h1{
+        padding: 15px 15px 15px 0;
+        margin-bottom: 10px;
+        font-size: 50px;
+        font-weight: bold;
+    }
+    header img{
+        height: 200px;
+        margin-left: 20px;
+    }
+    main img{
+        width: 600px;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width: 650px){
+    header{
+        padding: 25px;
+    }
+    #header_container{
+        margin-right: 0;
+        text-align: center;
+    }
+    header h1{
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    header img{
+        height: 270px;
+        padding: 25px 0 15px 0;
+        margin: 0 30px;
+    }
+    nav ul li{
+        font-size: 20px;
+    }
+    #nav_first{
+        padding-left: 15px;
+    }
+    main{
+        width: 330px;
+        padding: 10px 0 40px 0;
+    }
+    main p{
+        margin: 30px 0;
+        font-size: 15px;
+    }
+    main img{
+        width: 350px;  
+    }
+}
+@media screen and (max-width: 425px){
+    header h1{
+        font-size: 20px;
+    }
+    header img{
+        height: 250px;
+    }
+    nav ul li{
+        height: 20px;
+        padding: 0px 10px;
+        font-size: 15px;
+    }
+    main{
+        width: 270px;
+        padding: 5px 0 30px 0;
+    }
+    main img{
+        width: 250px;
+    }
+    footer{
+        padding: 10px 0 10px 0;
+    }
+    footer ul li{
+        font-size: 10px;
+        padding: 5px 7.5px;
+    }
 }
