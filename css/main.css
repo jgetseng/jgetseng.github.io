@@ -162,6 +162,13 @@ main a{
     font-size: 10px;
     margin-top: 5px;
 }
+#thought_list a{
+    width: fit-content;
+}
+#thought_list p a:hover{
+    color: white;
+    text-shadow: 0px 0px 3px black;
+}
 
 /* Essay */
 
@@ -241,12 +248,9 @@ main img{
 }
 
 /* Thought */
-#thought_list a{
-    width: fit-content;
-}
-#thought_list p a:hover{
-    color: white;
-    text-shadow: 0px 0px 3px black;
+
+.thought_bubble{
+   padding-top: 20px;
 }
 
 /* Footer */
