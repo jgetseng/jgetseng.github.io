@@ -19,7 +19,7 @@ header{
     vertical-align: middle;
 }
 header h1{
-    margin: 15px, 0;
+    padding: 5px;
     font-size: 30px;
     font-weight: bold;
 }
@@ -35,7 +35,7 @@ header h1 a:hover{
 /* Navigation */
 
 nav{
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: center;
 }
@@ -72,7 +72,7 @@ nav ul li a:hover{
 
 main{
     width: 800px;
-    padding: 35px 0 50px 0;
+    padding: 30px 0 50px 0;
     margin: auto;
 }
 main a{
@@ -253,7 +253,7 @@ main img{
 
 footer{
     background-color: black;
-    padding: 20px 0 20px 0;
+    padding: 30px 0 30px 0;
     display: flex;
     justify-content: center;
 }
@@ -270,7 +270,7 @@ footer ul li{
 }
 footer ul li i{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none; 
 }
 footer ul li a i:hover{
@@ -324,9 +324,12 @@ footer ul li a i:hover{
 }
 
 @media screen and (max-width: 650px){
+    header h1{
+        font-size: 25px;
+    }
     main{
         width: 330px;
-        padding: 25px 0 40px 0;
+        padding: 20px 0 40px 0;
     }
     .section_title{
         width: 330px;
@@ -392,7 +395,7 @@ footer ul li a i:hover{
         margin: 30px 0;
     }
     main img{
-        width: 350px;
+        width: 330px;
     }
     .photo_container{
         padding-bottom: 40px;
@@ -420,12 +423,12 @@ footer ul li a i:hover{
     }
     main{
         width: 270px;
-        padding: 5px 0 30px 0;
+        padding: 10px 0 30px 0;
     }
     .section_title{
         width: 270px;
-        padding-bottom: 10px;
-        margin: 0 0 10px 0;
+        padding-bottom: 15px;
+        margin: 0px 0 15px 0;
         font-size: 20px;
     }
     .essay_block{
@@ -462,11 +465,8 @@ footer ul li a i:hover{
         height: 40px;
         padding: 2px;
     }
-    footer{
-        padding: 10px 0 10px 0;
-    }
     footer ul li{
         font-size: 10px;
-        padding: 5px 7.5px;
+        padding: 10px 10px;
     }
 }
