@@ -6,7 +6,7 @@ html{
 /* Header */
 
 header{
-    padding: 50px;
+    padding: 50px 0 50px 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -14,7 +14,7 @@ header{
 }
 #header_container{
     width: fit-content;
-    margin-right: 50px;
+    margin-right: 46px;
     text-align: left;
 }
 header h1{
@@ -32,7 +32,7 @@ header a:hover{
     text-shadow: 0px 0px 3px black;
 }
 header img{
-    height: 300px;
+    height: 400px;
     margin-left: 50px;
 }
 
@@ -120,24 +120,27 @@ footer ul li a i:hover{
     main{
         width: 600px;
     }
+    header{
+        padding: 50px 0 50px 0;
+    }
     #header_container{
         width: fit-content;
-        margin-right: 20px;
+        margin-right: 21px;
         text-align: left;
     }
     header h1{
         padding: 15px 15px 15px 0;
         margin-bottom: 10px;
-        font-size: 50px;
+        font-size: 40px;
         font-weight: bold;
     }
     header img{
-        height: 200px;
-        margin-left: 20px;
+        height: 250px;
+        margin-left: 21px;
     }
     main img{
         width: 600px;
-        margin-top: 30px;
+        margin-top: 10px;
     }
 }
 
@@ -152,9 +155,10 @@ footer ul li a i:hover{
     header h1{
         font-size: 30px;
         padding-left: 15px;
+        margin: 0px;
     }
     header img{
-        height: 270px;
+        height: 330px;
         padding: 25px 0 15px 0;
         margin: 0 30px;
     }
@@ -169,11 +173,10 @@ footer ul li a i:hover{
         padding: 10px 0 40px 0;
     }
     main p{
-        margin: 30px 0;
         font-size: 15px;
     }
     main img{
-        width: 350px;  
+        width: 330px;  
     }
 }
 @media screen and (max-width: 425px){
@@ -181,7 +184,7 @@ footer ul li a i:hover{
         font-size: 20px;
     }
     header img{
-        height: 250px;
+        height: 270px;
     }
     nav ul li{
         height: 20px;
@@ -193,7 +196,7 @@ footer ul li a i:hover{
         padding: 5px 0 30px 0;
     }
     main img{
-        width: 250px;
+        width: 270px;
     }
     footer{
         padding: 10px 0 10px 0;

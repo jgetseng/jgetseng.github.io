@@ -20,6 +20,7 @@ header{
 }
 header h1{
     padding: 5px;
+    margin: 20px 0;
     font-size: 30px;
     font-weight: bold;
 }
@@ -328,9 +329,6 @@ footer ul li a i:hover{
 }
 
 @media screen and (max-width: 650px){
-    header h1{
-        font-size: 25px;
-    }
     main{
         width: 330px;
         padding: 20px 0 40px 0;
@@ -418,7 +416,7 @@ footer ul li a i:hover{
 }
 @media screen and (max-width: 425px){
     header h1{
-        font-size: 20px;
+        font-size: 25px;
     }
     nav ul li{
         height: 20px;
