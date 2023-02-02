@@ -17,7 +17,7 @@ const nav_letter = document.createElement("a");
 
 header_container.id = "header_container";
 homepage_a.href = "/homepage.html";
-homepage_a.innerText = "曾奕中 Jge.";
+homepage_a.innerText = "Jge.";
 
 nav_li_letter.id = "nav_last";
 
@@ -66,19 +66,4 @@ document.body.append(header);
         </nav>
     </div>
 </header>
-*/
-
-/*      
-        <header id="header">
-            <div id="header_container">
-                <h1><a href="/homepage.html">Jge.</a></h1>
-                <nav id="nav">
-                    <ul>
-                        <li class="nav_divider"><a href="essay.html">關於 About.</a></li>
-                        <li class="nav_divider"><a href="articles.html">文章 Articles.</a></li>
-                        <li><a href="photographs.html">攝影 Photographs.</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
 */
