@@ -1,3 +1,4 @@
+/*
 const footer = document.createElement("footer");
 const footer_ul = document.createElement("ul");
 const email = document.createElement("li");
@@ -43,6 +44,7 @@ footer_ul.append(instagram);
 footer_ul.append(youtube);
 footer.append(footer_ul);
 document.body.append(footer);
+*/
 
 /*
         <footer id="footer">
