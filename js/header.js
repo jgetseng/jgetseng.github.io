@@ -54,13 +54,13 @@ document.body.append(header);
 /*
 <header>
     <div id="header_container">
-        <h1><a href="/homepage.html">曾奕中 Jge.</a></h1>
+        <h1><a href="/homepage.html">Jge.</a></h1>
         <nav>
             <ul>
                 <li><a href="essay.html">隨筆</a></li>
-                <li><a href="">隨拍</a></li>
-                <li><a href="">隨想</a></li>
-                <li><a href="">隨評</a></li>
+                <li><a href="photograph.html">隨拍</a></li>
+                <li><a href="thought.html">隨想</a></li>
+                <li><a href="comment.html">隨評</a></li>
                 <li id="nav_last"><a href="https://forms.gle/iUupMWH6DuynX3mi7" target="_blank">隨信</a></li>
             </ul>
         </nav>
