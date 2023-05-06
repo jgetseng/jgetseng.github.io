@@ -1,4 +1,6 @@
-const meta = document.createElement("meta")
+const meta_charset = document.createElement("meta")
+const meta_robots = document.createElement("meta")
+const meta_viewport = document.createElement("meta")
 const normalize = document.createElement("link");
 const main = document.createElement("link");
 const fontgoogleapis = document.createElement("link");
@@ -6,9 +8,11 @@ const fontgstatic = document.createElement("link");
 const font = document.createElement("link");
 const icon = document.createElement("script");
 
-meta.charset = "UTC-8";
-meta.name = "viewport";
-meta.content = "width=device-width, initial-scale=1, user-scalable=no";
+meta_charset.charset = "UTC-8";
+meta_robots.name = "robots";
+meta_robots.content = "nofollow";
+meta_viewport.name = "viewport";
+meta_viewport.content = "width=device-width, initial-scale=1, user-scalable=no";
 
 normalize.rel = "stylesheet";
 normalize.href = "/css/normalize.css";
@@ -29,7 +33,9 @@ font.href = "https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+S
 icon.src = "https://kit.fontawesome.com/1f333a0a21.js";
 icon.crossOrigin;
 
-document.head.append(meta);
+document.head.append(meta_charset);
+document.head.append(meta_robots);
+document.head.append(meta_viewport);
 document.head.append(normalize);
 document.head.append(main);
 document.head.append(fontgoogleapis);
@@ -39,7 +45,8 @@ document.head.append(icon);
 
 /*
     <meta charset="UTC-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="robots" content="nofollow">
+    <meta name="viewport" content="width=device-widmth, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
