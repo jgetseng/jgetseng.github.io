@@ -93,7 +93,7 @@ main a{
     justify-content: space-between;
 }
 .section_scroll{
-    padding: 50px;
+    padding: 40px;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -375,9 +375,6 @@ footer ul li a i:hover{
     }
     .photo_title{
         font-size: 18px;
-    }
-    .book_block img{
-        height: 180px;
     }
     .book_title{
         font-size: 18px;
