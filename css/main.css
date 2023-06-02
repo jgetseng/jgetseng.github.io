@@ -92,9 +92,26 @@ main a{
     flex-wrap: wrap;
     justify-content: space-between;
 }
+.section_scroll{
+    padding: 50px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: auto;
+}
+.section_scroll:hover{
+    background: rgb(240, 240, 240);
+    transition: all 200ms ease;
+}
 .section_divider{
+    padding: 20px;
     border: 0;
-    margin: 12.5px 0;
+    margin: 0;
+}
+.block_divider{
+    padding: 20px;
+    border: 0;
+    margin: 0;
 }
 .essay_block{
     width: 300px;
@@ -105,7 +122,7 @@ main a{
     justify-content: center;
 }
 .essay_block:hover{
-    background: rgb(245, 245, 245);
+    background: rgb(240, 240, 240);
     color: white;
     text-shadow: 0px 0px 3px black;
     transition: all 200ms ease;
@@ -164,7 +181,6 @@ main a{
     margin-top: 5px;
 }
 .book_block{
-    margin: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -254,6 +270,14 @@ main img{
     width: 800px;
 }
 
+/* Book */
+
+.book_quote{
+    border-left: solid 3px black;
+    padding-left: 15px;
+    font-style: italic;
+}
+
 /* Photograph */
 
 .photo_container{
@@ -292,135 +316,6 @@ main img{
 
 .thought_bubble{
    padding-top: 20px;
-}
-
-/* Mail */
-
-#mail_body{
-    display: flex;
-}
-#mail_form{
-    width: 50%;
-}
-.mail_block{
-    margin-bottom: 20px;
-}
-.mail_subblock{
-    width: 100%;
-    position: relative;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-}
-.mail_input{
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ced4da;
-    border-radius: 0.25rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: white;
-    background-clip: padding-box;
-    outline: none;
-    display: block;
-    transition: border-color 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
-}
-.mail_input:focus{
-    border: 1px solid #313131;
-}
-select.mail_input[size], select.mail_input[multiple]{
-    height: auto;
-}
-textarea.mail_input{
-    height: auto;
-}
-.mail_label{
-    margin-bottom: 20px;
-    display: inline-block;
-}
-#mail_credit{
-    font-size: 15px;
-    color: #555555;
-}
-#mail_credit a{
-    color: #555555;
-    text-decoration: underline;
-}
-#mail_credit a:hover{
-    color: blue;
-}
-
-.fcf-btn{
-    display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: 0.375rem 0.75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0.25rem;
-    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-}
-
-@media (prefers-reduced-motion: reduce){
-    .fcf-btn {
-        transition: none;
-    }
-}
-
-.fcf-btn:hover{
-    color: #212529;
-    text-decoration: none;
-}
-
-.fcf-btn:focus, .fcf-btn.focus{
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-}
-
-.fcf-btn-primary{
-    color: #fff;
-    background-color: #007bff;
-    border-color: #007bff;
-}
-
-.fcf-btn-primary:hover{
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.fcf-btn-primary:focus, .fcf-btn-primary.focus{
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
-}
-
-.fcf-btn-lg, .fcf-btn-group-lg>.fcf-btn{
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 1.5;
-    border-radius: 0.3rem;
-}
-
-.fcf-btn-block{
-    display: block;
-    width: 100%;
-}
-
-input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[type="button"].fcf-btn-block{
-    width: 100%;
 }
 
 /* Footer */
@@ -539,15 +434,8 @@ footer ul li a i:hover{
     .photo_title{
         font-size: 20px;
     }
-    .book_block{
-        margin-bottom: 15px;
-    }
     .book_block img{
         height: 220px;
-        opacity: 0.3;
-    }
-    .book_block img:hover{
-        opacity: 0.3;
     }
     .book_title{
         font-size: 20px;
@@ -586,6 +474,9 @@ footer ul li a i:hover{
     }
     main img{
         width: 330px;
+    }
+    .book_quote{
+        padding-left: 10px;
     }
     .photo_container{
         padding-bottom: 40px;
