@@ -12,9 +12,10 @@ const icon = document.createElement("script");
 meta_charset.charset = "UTC-8";
 meta_robots.name = "robots";
 meta_robots.content = "nofollow";
-meta_google_site_verification.content = "BINezfq2izQzubd5TzG4FuKbuENlcQZL8Uz2QgJeiOE";
 meta_viewport.name = "viewport";
 meta_viewport.content = "width=device-width, initial-scale=1, user-scalable=no";
+meta_google_site_verification.name = "google_site_verification";
+meta_google_site_verification.content = "BINezfq2izQzubd5TzG4FuKbuENlcQZL8Uz2QgJeiOE";
 
 normalize.rel = "stylesheet";
 normalize.href = "/css/normalize.css";
