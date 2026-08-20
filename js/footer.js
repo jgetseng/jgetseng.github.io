@@ -9,29 +9,38 @@ const medium_i = document.createElement("i");
 const youtube = document.createElement("li");
 const youtube_a = document.createElement("a");
 const youtube_i = document.createElement("i");
+const mail = document.createElement("li");
+const mail_a = document.createElement("a");
+const mail_i = document.createElement("i");
 
 footer.id = "footer";
 instagram_i.className = "fab fa-instagram";
 medium_i.className = "fab fa-medium";
 youtube_i.className = "fab fa-youtube";
+mail_i.className = "fa fa-envelope";
 
 instagram_a.href = "https://www.instagram.com/jgetseng/";
 medium_a.href = "https://jgetseng.medium.com/";
 youtube_a.href = "https://www.youtube.com/channel/UCV8minFHgKlfRzkbSTJFokA";
+mail_a.href = "mailto:getseng19@gmail.com";
 
 instagram_a.target = "_blank";
 medium_a.target = "_blank";
 youtube_a.target = "_blank";
+mail_a.target = "_blank";
 
 instagram_a.append(instagram_i);
 medium_a.append(medium_i);
 youtube_a.append(youtube_i);
+mail.append(mail_i);
 instagram.append(instagram_a);
 medium.append(medium_a);
 youtube.append(youtube_a);
+mail.append(mail_a);
 footer_ul.append(instagram);
 footer_ul.append(medium);
 footer_ul.append(youtube);
+footer_ul.append(mail);
 footer.append(footer_ul);
 document.body.append(footer);
 
@@ -41,6 +50,7 @@ document.body.append(footer);
                 <li><a href="https://www.instagram.com/jgetseng/" target="_blank"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="https://jgetseng.medium.com/" target="_blank"><i class="fa fa-medium"></i></a></li>
                 <li><a href="https://www.youtube.com/channel/UCV8minFHgKlfRzkbSTJFokA" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="mailto:getseng19@gmail.com" target="_blank"><i class="fab fa-envelope"></i></a></li>
             </ul>  
         </footer>
 */
