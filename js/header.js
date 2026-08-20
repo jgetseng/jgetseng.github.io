@@ -16,7 +16,7 @@ const nav_photograph = document.createElement("a");
 const nav_thought = document.createElement("a");
 
 header_container.id = "header_container";
-homepage_a.href = "/homepage.html";
+homepage_a.href = "/about.html";
 homepage_a.innerText = "Jge.";
 
 nav_li_thought.id = "nav_last";
@@ -53,9 +53,10 @@ document.body.append(header);
 /*
 <header>
     <div id="header_container">
-        <h1><a href="/homepage.html">Jge.</a></h1>
+        <h1><a href="/index.html">Jge.</a></h1>
         <nav>
             <ul>
+                <li><a href="about.html">關於</a></li>
                 <li><a href="essay.html">隨筆</a></li>
                 <li><a href="book.html">隨讀</a></li>
                 <li><a href="photograph.html">隨拍</a></li>
